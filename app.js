@@ -6,6 +6,8 @@ const minute = document.querySelector(".minute");
 const second = document.querySelector(".second");
 const ınputValue = document.querySelector("#date");
 const messega = document.querySelector(".hidden-message");
+const body = document.querySelector(".container");
+const image = document.querySelector("img");
 
 const myDate = (e) => {
   const birth = new Date(ınputValue.value);
@@ -29,6 +31,8 @@ const myDate = (e) => {
     Do not go gentle into that good night,
     Old age should burn and rave at close of day;
     Rage, rage against the dying of the light.`;
+    body.style.backgroundImage = "url('./images/image-2.jpg')";
+    // image.style.background = "./images/image-2";
   }
 };
 
